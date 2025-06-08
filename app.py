@@ -20,7 +20,7 @@ while True:
     else:
         print("Label: Neutral")
 
-    # Polarity Bar (text-only visualization)
+    # Polarity Bar
     bar_length = int((score + 1) * 10)
     bar = "#" * bar_length
     print(f"Polarity bar: {bar}\n")
