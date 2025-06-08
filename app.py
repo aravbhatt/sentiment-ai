@@ -10,10 +10,9 @@ while True:
     blob = TextBlob(text)
     score = blob.sentiment.polarity
 
-    # Score
     print("Polarity score:", score)
 
-    # Labels
+    # Label
     if score > 0:
         print("Label: Positive")
     elif score < 0:
@@ -21,6 +20,7 @@ while True:
     else:
         print("Label: Neutral")
 
-    # Visual Bar
-    bar = int((score + 1) * 10) * "■"
+    # Polarity Bar (text-only visualization)
+    bar_length = int((score + 1) * 10)
+    bar = "#" * bar_length
     print(f"Polarity bar: {bar}\n")
